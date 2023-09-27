@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 80px;
+  background-color: #3cccd6;
+  padding: 5px 10%;
+}
+
+.logo {
+  max-width: 7rem;
+  cursor: pointer;
+  margin-right: auto;
+  max-width: 6rem;
+  transition: all 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.6)
+}
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
+}
+
+
+.nav-list li a {
+  text-decoration: none;
+  color: #eceff1;
+  font-family: 'Righteous', cursive;
+  font-size: 25px;
+  
+}
+
+.nav-list a:hover {
+  color: #ffbc0e;
+}
+
+.abrir-menu,
+.cerrar-menu {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  .abrir-menu,
+  .cerrar-menu {
+      display: block;
+      border: 0;
+      font-size: 1.25rem;
+      background-color: transparent;
+      cursor: pointer;
+  }
+
+  .abrir-menu {
+      color: #fdfbfb;
+  }
+
+  .cerrar-menu {
+      color: #fcfbfb;
+  }
+
+  .nav {
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 1rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #34babe;
+      padding: 2rem;
+      box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+  }
+
+  .nav.visible {
+      opacity: 1;
+      visibility: visible;
+  }
+  
+  .nav-list {
+      flex-direction: column;
+      align-items: end;
+  }
+
+  .nav-list li a {
+      color: #f8f7f7ec;
+  }
+}
