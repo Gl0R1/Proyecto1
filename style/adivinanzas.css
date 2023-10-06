@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Pacifico&family=Righteous&display=swap');
 
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -8,47 +10,36 @@
 }
 
 
-
-h1, h2 {
-  font-family: 'Mulish', sans-serif;
-  font-size: 22px;
-  color: rgb(21,160,133,.7);
-  line-height: 1.2;
-  margin-top: 0;
-  box-sizing: border-box;
-  
-}
-p {
-  color: #666;
-}
-
-.imagen{
-  padding-left: 190px;
-  max-height: 240px;
-}
-
-
 header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  height: 80px;
+  height: 90px;
   background-color: #3cccd6;
-  
-  
+  padding: 3px 5%;
 }
 
+.logo {
+  max-width: 7rem;
+  cursor: pointer;
+  margin-right: auto;
+  max-width: 16rem;
+  transition: all 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
 .nav-list {
   list-style-type: none;
   display: flex;
-  text-align: center;
-  gap: 5rem;
+  gap: 3rem;
 }
 
 .nav-list li a {
   text-decoration: none;
   color: #eceff1;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   font-size: 25px;
 }
 
@@ -56,6 +47,97 @@ header {
   color: #ffbc0e;
 }
 
+.abrir-menu,
+.cerrar-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .abrir-menu {
+    color: #fdfbfb;
+  }
+
+  .cerrar-menu {
+    color: #fcfbfb;
+  }
+
+  .nav {
+    z-index: 20;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #34babe;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
+
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .nav-list li a {
+    color: #f8f7f7ec;
+  }
+}
 
 
 
+
+.row {
+  justify-content: center;
+  align-items: center;
+  margin: 80px;
+ }
+ h1, h2 {
+   font-family: 'Mulish', sans-serif;
+   color: rgb(21,160,133,.7);
+  
+ }
+ p {
+   font-size: 20px;
+   color: #666;
+ } 
+ 
+ .card-img-top {
+   margin-left: 100px;
+ }
+ 
+ .card {
+   border: 0;
+   
+ }
+
+.mono {
+  max-width: 7rem;
+  cursor: pointer;
+  margin-right: auto;
+  max-width: 16rem;
+  transition: all 0.3s;
+}
+
+.mono:hover {
+  transform: scale(1.3);
+}
