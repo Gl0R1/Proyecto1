@@ -226,7 +226,7 @@ h1 {
 
 @media (max-width: 768px) {
   .nav-item-footer {
-    flex-direction: row;
+    display: block;
     margin: 0px 20px 0px 0px;
   }
   .icons {
