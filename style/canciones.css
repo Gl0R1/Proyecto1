@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/musicFondo.jpg);
+  background-repeat: no-repeat;
+  background-position: 110%
+  
+  
+}
+
+
+.navbar {
+  background-color: #34babe;
+}
+.logo {
+  max-width: 7rem;
+  max-width: 16rem;
+  cursor: pointer;
+  
+  transition: all 0.3s;
+  margin: 5px 20px;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  
+  .logo {
+    max-width: 14rem;
+    margin: 8px 10px;
+  }
+}
+
+
+
+.video {
+  width: 660px;
+  height: 415px;
+  margin: 20px 20px;
+}
+
+@media (max-width: 768px) {
+  .video {
+    margin: 10px 0px;
+  }
+}
+
+

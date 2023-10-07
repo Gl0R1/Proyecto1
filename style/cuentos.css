@@ -1,0 +1,32 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+
+.row {
+  background-color: #34babe;
+  width: auto;
+  height: 80PX;
+}
+.logo {
+  max-width: 7rem;
+  max-width: 16rem;
+  cursor: pointer;
+  
+  transition: all 0.3s;
+  margin: 5px 20px;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+@media {
+  .logo {
+    max-width: 14rem;
+    margin: 8px 10px;
+  }
+}
