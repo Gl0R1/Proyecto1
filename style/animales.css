@@ -17,6 +17,7 @@ header {
   height: 90px;
   background-color: #e054b6;
   padding: 3px 5%;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -40,7 +41,7 @@ header {
   text-decoration: none;
   color: #eceff1;
   font-family: "Righteous", cursive;
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .nav-list a:hover {
@@ -107,7 +108,7 @@ header {
 .titulo p{
   color: aliceblue;
   text-align: center;
-  font-size: 90px;
+  font-size: 50px;
   border: 2px solid white;
   background: #1d83c7;
 }
