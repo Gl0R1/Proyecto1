@@ -109,6 +109,12 @@ header {
   }
 }
 
+@media (max-width: 768px) {
+  .nav-list li a {
+    font-size: 16px;
+   }
+ }
+
 
 .titulo p{
   color: aliceblue;

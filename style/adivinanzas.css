@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Pacifico&family=Righteous&display=swap');
 
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap");
@@ -103,6 +104,13 @@ header {
   }
 }
 
+@media (max-width: 768px) {
+ .nav-list li a {
+  font-size: 16px;
+  
+  }
+}
+
 
 
 
@@ -136,10 +144,10 @@ header {
   }
   h1, h2, p {
     width: 100%;
-   
     margin: 0;
     font-size: 16px;
   }
+
  }
 
 .mono {
